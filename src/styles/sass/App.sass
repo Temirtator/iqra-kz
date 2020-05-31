@@ -1,0 +1,313 @@
+@import colors
+@import fonts
+$lang-hover-backg: #dbdee7
+$base-color: #1d91c8
+.wrap
+	&__main
+		&__intro
+			.container-fluid
+				max-width: 1395px
+				.row							
+					.col-lg-6
+						text-align: center
+						height: stretch
+						.lang
+							z-index: 5000
+							position: absolute
+							color: white
+							right: 80px
+							top: 70px
+							cursor: pointer
+							display: none
+							&__choice
+								display: none
+								background: white
+								color: black
+								border-radius: 4px
+								padding: 7px 0
+								position: absolute
+								right: 4px
+								span
+									padding: 0 7px
+								span:hover
+									background: $lang-hover-backg
+									color: $base-color
+
+						img.logo
+							width: 70px
+							position: absolute
+							top: 49px
+							left: 15px
+
+						.head-wrap
+							text-align: left
+							position: absolute
+							top: 50%
+							transform: translateY(-30%)
+							color: $white-ice
+							
+							h1, h4, p
+								font-family: $landing-font
+							
+							p
+								padding-top: 20px
+							
+							a
+								color: white
+								font-style: italic
+								text-decoration: underline
+							.stores
+								.row
+									margin: 0
+									a
+										img
+											width: 170px
+									
+									a:nth-child(2)
+										margin-left: 9px
+					.col-lg-6:nth-child(1)
+						.lang
+							display: none
+
+					.col-lg-6:nth-child(2)
+						.lang
+							&__choice__active
+								display: grid
+						img.main-image
+							width: 500px
+							position: relative
+							top: 56%
+							transform: translateY(-50%)
+							float: right
+
+							&__main
+								span:nth-child(2)
+									font-size: 13px	
+						
+		&__kuran
+			overflow: hidden
+			.container-fluid
+				max-width: 1500px
+				.row
+					.col-lg-6
+						text-align: left
+						height: stretch
+						.expl-text
+							text-align: left
+							position: absolute
+							top: 50%
+							right: 80px
+							transform: translateY(-50%)
+							color: $white-ice
+							font-family: $landing-font
+							p
+								font-style: italic
+								font-size: large
+							
+							img
+								width: 100px
+								position: relative
+								bottom: 20px
+							
+						img.illustration
+							width: 482px
+							position: relative
+							bottom: 36px
+							
+		&__uakit
+			overflow: hidden
+			.container-fluid
+				max-width: 1500px
+				.row
+					.col-lg-6
+						text-align: right
+						height: stretch
+						.expl-text
+							text-align: left
+							position: absolute
+							top: 50%
+							left: 80px
+							transform: translateY(-50%)
+							color: $bizarre
+							font-family: $landing-font
+							p
+								font-style: italic
+								font-size: large
+							img
+								width: 85px
+								position: relative
+								bottom: 20px
+						img.illustration
+							width: 518px
+							position: relative
+							bottom: 75px
+							right: 48px
+							
+		&__kitap
+			overflow: hidden
+			.container-fluid
+				max-width: 1500px
+				.row
+					.col-lg-6
+						text-align: left
+						height: stretch
+						.expl-text
+							text-align: left
+							position: absolute
+							top: 50%
+							right: 80px
+							transform: translateY(-50%)
+							color: $french-lilac
+							font-family: $landing-font
+							p
+								font-style: italic
+								font-size: large
+							img
+								width: 75px
+								position: relative
+								bottom: 20px
+						img.illustration
+							width: 510px
+							position: relative
+							bottom: 58px
+
+		&__kubila
+			overflow: hidden
+			.container-fluid
+				max-width: 1500px
+				.row
+					.col-lg-6
+						text-align: center
+						height: stretch
+					.col-lg-6:nth-child(2)
+						.animated-compass
+							height: 500px
+							position: relative
+							background-image: url(../assets/images/concept/qibla-no-direct.png)
+							background-repeat: no-repeat
+							background-size: 390px
+							background-position: 50% 50%
+
+							img:nth-child(1)
+								position: absolute
+								z-index: 100
+								top: calc(50% - 57px)
+								left: calc(50% - 25px)
+								-webkit-animation: spin 4s linear infinite
+								-moz-animation: spin 4s linear infinite
+								animation: spin 4s linear infinite
+							
+					.col-lg-6:nth-child(1)
+						.expl-text
+							text-align: left
+							position: absolute
+							top: 50%
+							left: 80px
+							transform: translateY(-50%)
+							color: $link-water
+							font-family: $landing-font
+							
+							p
+								font-style: italic
+								font-size: large
+
+							img
+								width: 85px
+								position: relative
+								bottom: 20px
+
+		&__footer
+			overflow: hidden
+			.container-fluid
+				max-width: 1500px
+				height: inherit
+				.row
+					position: relative
+					top: 50%
+					transform: translateY(-50%)
+					font-family: $landing-font
+					.privacy
+						width: fit-content
+						text-align: center
+						color: $link-water
+						position: absolute
+						left: 50%
+						top: 50%
+						transform: translate(-50%, -50%)
+						p
+							margin: 0
+							
+						p, a
+							color: $link-water
+
+					.footer_logo
+						width: 70px
+						height: 70px
+						position: relative
+						left: 80px
+
+					.social-netw
+						position: absolute
+						right: 80px
+						top: 50%
+						transform: translateY(-50%)
+						a
+							img
+								width: 30px
+
+						a:nth-child(2)
+							margin: 0 10px
+
+		section:nth-child(2),
+		section:nth-child(3),
+		section:nth-child(4),
+		section:nth-child(5)
+			max-height: 500px
+		
+		section:nth-child(6)
+			height: 100px
+			background-color: $san-juan
+		
+		section:nth-child(1)
+			background: linear-gradient( $curious-blue1-opacity 100%, $curious-blue1-opacity 100%), url("../assets/images/concept/tracery.jpg")
+			// $curious-blue1
+
+		section:nth-child(2)
+			background: linear-gradient( $mountain-meadow-opacity 100%, $mountain-meadow-opacity 100%), url("../assets/images/concept/tracery.jpg")
+			// $mountain-meadow
+
+		section:nth-child(3)
+			background: linear-gradient( $burnt-sienna-opacity 100%, $burnt-sienna-opacity 100%), url("../assets/images/concept/tracery.jpg")
+			// $burnt-sienna
+
+		section:nth-child(4)
+			background: linear-gradient( $wisteria-opacity 100%, $wisteria-opacity 100%), url("../assets/images/concept/tracery.jpg") 
+			// $wisteria
+
+		section:nth-child(5)
+			background: linear-gradient( $shakespeare-opacity 100%, $shakespeare-opacity 100%), url("../assets/images/concept/tracery.jpg") 
+			// $shakespeare
+				
+.rule-component
+	padding: 40px
+
+@-moz-keyframes spin 
+	100%
+		-moz-transform: rotate(360deg)
+
+@-webkit-keyframes spin
+	100%
+		-webkit-transform: rotate(360deg)
+
+@keyframes spin
+	0%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(0deg)
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
+
+
+/* Adaptation landing */
+@import adaptation
